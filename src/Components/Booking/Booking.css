@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6e005f, #3c009d);
+  color: #ffffff;
+}
+
+/* Booking Container */
+.booking-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.booking-container h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+.booking-container p {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #f4d03f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #4c004b;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group textarea {
+  resize: none;
+  height: 80px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Error & Success Messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.success-message {
+  color: #00e676;
+  font-size: 14px;
+}
+
+/* Booking Button */
+.booking-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #4c004b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking-button:hover {
+  background: #6e005f;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #4c004b;
+}
+
+.form-group select:focus {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #ff0000;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.success-message {
+  color: #28a745;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+

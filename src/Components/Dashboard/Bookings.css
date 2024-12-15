@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background: linear-gradient(#2A00B7, #42006C);
+    color: #fff;
+}
+
+.bookings-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #f0f0f0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ddd;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+}
+
+.booking-card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-title {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.status-badge.active {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-badge.ongoing {
+    background-color: #ffc107;
+    color: black;
+}
+
+.status-badge.finished {
+    background-color: #6c757d;
+    color: white;
+}
+
+.expand-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.expand-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-details {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.05); /* Slightly darker for details */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.no-bookings {
+    color: #ccc;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.loading-spinner {
+    text-align: center;
+    color: #ffc107;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Booking List - Grid Layout for Cards */
+.booking-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid with minimum card width */
+    gap: 20px; /* Space between cards */
+}
+
+/* Center-align the sections and content */
+section {
+    text-align: center;
+}
+
+.booking-card {
+    text-align: left; /* Maintain left alignment for card content */
+    max-width: 100%;
+    margin: auto; /* Center cards horizontally within their grid cells */
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  

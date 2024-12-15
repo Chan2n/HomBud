@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import LoginSignup from "./Components/LoginSignup/LoginSignup";
+import Dashboard from "./Components/Dashboard/Dashboard";
+import Booking from "./Components/Booking/Booking";
+import Bookings from "./Components/Dashboard/Bookings";
+import ExpertDashboard from "./Components/Dashboard/ExpertDashboard"; // Import the ExpertDashboard
+import { UserProvider } from "./Components/LoginSignup/UserContext";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserProvider>
+      <Router>
+        <Routes>
+          {/* Public Routes */}
+          <Route path="/" element={<LoginSignup />} />
+
+          {/* Protected Routes */}
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/bookings" element={<Bookings />} />
+          <Route path="/expert-dashboard" element={<ExpertDashboard />} /> {/* Add this */}
+
+          {/* Catch-all for unknown routes */}
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </Router>
+    </UserProvider>
   );
-}
+};
 
 export default App;

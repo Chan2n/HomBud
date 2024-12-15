@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6e005f, #3c009d);
+  color: #ffffff;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.hamburger-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.menu-overlay.slide-in {
+  transform: translateX(0);
+}
+
+.menu-overlay.slide-out {
+  transform: translateX(100%);
+}
+
+.close-button {
+  font-size: 24px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 50px 20px;
+}
+
+.menu-items li {
+  margin: 15px 0;
+  font-size: 18px;
+  cursor: pointer;
+  color: #f4d03f;
+  transition: color 0.3s;
+}
+
+.menu-items li:hover {
+  color: #fff;
+}
+
+/* Header Section */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.dashboard-header h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #fff;
+}
+
+.dashboard-header .brand-name {
+  color: #f4d03f;
+  font-weight: bold;
+}
+
+.dashboard-header p {
+  font-size: 18px;
+  margin: 10px 0 20px;
+  color: #ddd;
+}
+
+/* Services Section */
+.services-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f4d03f;
+}
+
+/* Service Card */
+.service-card {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img.service-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #eee;
+  margin: 10px 0 20px;
+}
+
+.service-button {
+  padding: 10px 20px;
+  background: #f4d03f;
+  color: #4c004b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.service-button:hover {
+  background: #f1c40f;
+}
+
+/* Advertisements Section */
+.advertisements-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.advertisements-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f4d03f;
+}
+
+.ads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.ad-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ad-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 15px; /* Makes the images rounded */
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ad-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.ad-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.ad-card p {
+  font-size: 16px;
+  color: #ddd;
+}
