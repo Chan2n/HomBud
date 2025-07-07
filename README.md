@@ -1,4 +1,4 @@
-# hombuddynew
+# HomBuddy
 
 A new Flutter project.
 
